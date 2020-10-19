@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Form Registration</title>
+  <link rel="stylesheet" href="style-form.css">
+</head>
+
+<body>
+  <div id="myform">
+    <div id="title">
+      <h1>Registration Form</h1>
+    </div>
+    
+    <div id="form">
+      <form  action="/register" method="POST" onsubmit="return validatePwd()">
+        <input class="forms" type="text" name="name" placeholder="Full Name" required>
+
+        <br>
+
+        <input class="forms" type="email" name="email" placeholder="Email" required autocomplete="off">
+
+        <br>
+
+        <input class="forms" type="tel" name="phone" placeholder="Phone Number" minlength="6" maxlength="6">
+
+        <br>
+
+        <input class="forms" type="password" id="password" name="password" placeholder="Password" required autocomplete="off">
+
+        <br>
+
+        <input class="forms" type="password" id="confirmation" name="confirmation" placeholder="Confirm your password" required autocomplete="off">
+
+        <br>
+
+        <input class="checks" type="checkbox">
+        <label class="checks">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus perferendis libero aperiam, id dolore dolorem nostrum dolorum.</label>
+  
+        <br>
+
+        <input class="checks" type="checkbox">
+        <label class="checks">Tempore accusantium illum iusto odio, aperiam eaque aliquid doloribus dicta architecto ipsum libero.</label>
+
+        <br>
+
+        <input id="suButton" type="submit" value="Register">
+    
+        <script>
+          function validatePwd(){
+            var x = document.getElementById("password").value;
+            var y = document.getElementById("confirmation").value;
+    
+            if (x != y) {
+              alert("Passwords are not the same, retry !");
+              return false;
+            }
+          }
+        </script>
+      </form>
+    </div>
+  </div>
+</body>
+  
+</html>

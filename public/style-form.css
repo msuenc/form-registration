@@ -1,0 +1,61 @@
+body {
+    background-image: linear-gradient(#7400b8, #80ffdb);
+    background-size: unset;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Index */
+#myform {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 70vh;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    background-color: #1b263b;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title {
+    text-align: center;
+    background-color: #0d1b2a;
+    border-radius: 4px;
+    color: white;
+}
+
+#form {
+    align-items: center;
+    margin: auto;
+}
+
+.forms {
+    width: 80%;
+    height: 5vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.checks {
+    border-radius: 4px;
+    color: white;
+    font-size: small;
+    align-items: center;
+    margin: auto;
+}
+
+#suButton {
+    font-size: large;
+    color: white;
+    background-color: #538d22;
+    float: right;
+    border-radius: 4px;
+    width: 25%;
+}
+
+/* Success */
